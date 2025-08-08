@@ -16,14 +16,17 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">QUIEN SOY</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#portfolio">PORTAFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">QUIEN SOY</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </header>
     </div>
 
@@ -31,16 +34,15 @@
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
-                <i class="fas fa-cog neon-glow"></i>
+                <i class="fas fa-cog"></i>
             </div>
-            <h1>Angel Emanuel Olivares Domínguez</h1>
+            <h1>Angel Emanuel</h1>
             <h2>Ingeniero Mecatrónico - Automatización & Robótica</h2>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/angel-emanuel-olivares-dom%C3%ADnguez-31313b366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Ingeniero-Angel-Emanuel"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/share/1CSAp6jHXV/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/angel._.emanuel_?igsh=dDhvbnFqNm81OTFp"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
     </section>
@@ -63,15 +65,15 @@
                     <ul>
                         <li>
                             <strong>Cumpleaños:</strong>
-                            [Tu fecha de nacimiento]
+                            7 de octubre, 2005
                         </li>
                         <li>
                             <strong>Teléfono:</strong>
-                            [Tu número telefónico]
+                            +52 964 101 0089
                         </li>
                         <li>
                             <strong>Email:</strong>
-                            angel.olivares@email.com
+                            ing.angelemanuel@gmail.com
                         </li>
                         <li>
                             <strong>Website:</strong>
@@ -79,7 +81,7 @@
                         </li>
                         <li>
                             <strong>Dirección:</strong>
-                            [Tu ciudad, estado]
+                            Huixtla, Chiapas, México
                         </li>
                         <li>
                             <strong>Especialidad:</strong>
@@ -105,14 +107,6 @@
                             <span>AUTOMATIZACIÓN</span>
                         </div>
                         <div class="interes">
-                            <i class="fa-solid fa-brain"></i>
-                            <span>IA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-car"></i>
-                            <span>AUTOS</span>
-                        </div>
-                        <div class="interes">
                             <i class="fa-solid fa-gamepad"></i>
                             <span>TECH</span>
                         </div>
@@ -135,50 +129,42 @@
     </section>
 
     <!-- Sección Skills -->
-    <div class="skills" id="skills">
+    <section class="skills" id="skills">
         <div class="contenido-section">
             <h2>Skills</h2>
             <div class="fila">
                 <!-- Technical Skills -->
                 <div class="col">
                     <h3>Technical Skills</h3>
-                    <div class="skill" data-skill="autocad">
-                        <span>AutoCAD & SolidWorks</span>
+                    <div class="skill">
+                        <span>Autodesk Fusion & SolidWorks</span>
                         <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
+                            <div class="progreso" id="autocad">
+                                <span>60%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skill" data-skill="matlab">
-                        <span>MATLAB & Simulink</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill" data-skill="plc">
+                    <div class="skill">
                         <span>Programación PLC</span>
                         <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
+                            <div class="progreso" id="plc">
+                                <span>65%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skill" data-skill="arduino">
+                    <div class="skill">
                         <span>Arduino & Raspberry Pi</span>
                         <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
+                            <div class="progreso" id="arduino">
+                                <span>65%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skill" data-skill="python">
+                    <div class="skill">
                         <span>Python & C++</span>
                         <div class="barra-skill">
-                            <div class="progreso">
-                                <span>70%</span>
+                            <div class="progreso" id="python">
+                                <span>55%</span>
                             </div>
                         </div>
                     </div>
@@ -187,50 +173,45 @@
                 <!-- Professional Skills -->
                 <div class="col">
                     <h3>Professional Skills</h3>
-                    <div class="skill" data-skill="comunicacion">
+                    <div class="skill">
                         <span>Comunicación</span>
                         <div class="barra-skill">
-                            <div class="progreso">
+                            <div class="progreso" id="comunicacion">
                                 <span>85%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skill" data-skill="liderazgo">
+                    <div class="skill">
                         <span>Liderazgo</span>
                         <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill" data-skill="resolucion">
-                        <span>Resolución de Problemas</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>95%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill" data-skill="trabajo">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
+                            <div class="progreso" id="liderazgo">
                                 <span>90%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skill" data-skill="adaptabilidad">
-                        <span>Adaptabilidad</span>
+                    <div class="skill">
+                        <span>Resolución de Problemas</span>
                         <div class="barra-skill">
-                            <div class="progreso">
+                            <div class="progreso" id="resolucion">
                                 <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso" id="trabajo">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Sección Curriculum -->
     <section id="curriculum" class="curriculum">
@@ -241,51 +222,53 @@
                     <h3>Educación</h3>
                     <div class="item izq">
                         <h4>Ingeniería Mecatrónica</h4>
-                        <span class="casa">[Tu Universidad]</span>
-                        <span class="fecha">2020-2024</span>
+                        <span class="casa">Universidad Politécnica de Tapachula</span>
+                        <span class="fecha">2023 - Presente</span>
                         <p>Formación integral en mecánica, electrónica, control automático y programación. 
                         Especialización en sistemas de automatización industrial y robótica avanzada.</p>
+                        <div class="conectori"></div>
                     </div>
                     <div class="item izq">
-                        <h4>Certificación en Automatización Industrial</h4>
-                        <span class="casa">Instituto Tecnológico</span>
-                        <span class="fecha">2023</span>
-                        <p>Certificación especializada en sistemas de control, PLC, SCADA y redes industriales. 
-                        Enfoque en optimización de procesos manufactureros.</p>
+                        <h4>Webinar: Prótesis Biónicas</h4>
+                        <span class="casa">P4H Bionics Online Academy</span>
+                        <span class="fecha">2024</span>
+                        <p>Curso teórico de 2 horas enfocado en tecnologías aplicadas al desarrollo de prótesis biónicas. 
+                        Introducción a conceptos de biomecatrónica, sistemas de control y tendencias actuales en prótesis inteligentes</p>
+                        <div class="conectori"></div>
                     </div>
                     <div class="item izq">
                         <h4>Curso de Robótica Avanzada</h4>
-                        <span class="casa">Centro de Robótica</span>
-                        <span class="fecha">2022</span>
-                        <p>Capacitación intensiva en diseño, programación y control de sistemas robóticos. 
-                        Desarrollo de proyectos con manipuladores industriales y robots móviles.</p>
+                        <span class="casa">CERHAN – Centro de Entrenamiento de la Planta Audi, Puebla</span>
+                        <span class="fecha">2025</span>
+                        <p>Capacitación intensiva de 6 horas enfocada en programación de sistemas automatizados con PLC y dispositivos industriales. 
+                        Enfocado en aplicaciones prácticas y resolución de problemas en entornos reales de manufactura. 
+                        Certificado de participación otorgado</p>
+                        <div class="conectori"></div>
                     </div>
                 </div>
 
                 <div class="col derecha">
                     <h3>Experiencia de trabajo</h3>
                     <div class="item der">
-                        <h4>Ingeniero de Automatización Jr.</h4>
-                        <span class="casa">[Empresa Industrial]</span>
-                        <span class="fecha">2024-Presente</span>
-                        <p>Diseño e implementación de sistemas de control automatizado para líneas de producción. 
-                        Optimización de procesos mediante tecnologías IoT y análisis de datos industriales.</p>
+                        <h4>Técnico de Mantenimiento General Jr.</h4>
+                        <span class="casa">Institución Académica Pública
+                        </span>
+                        <span class="fecha">2024</span>
+                        <p>Mantenimiento correctivo de maquinaria y equipos utilizados para el 
+                        mantenimiento general de las instalaciones. Diagnóstico, reparación y 
+                        puesta en marcha de sistemas mecánicos y eléctricos, contribuyendo a 
+                        mejorar la operatividad del entorno institucional.</p>
+                        <div class="conectord"></div>
                     </div>
                     <div class="item der">
-                        <h4>Becario de Investigación</h4>
-                        <span class="casa">[Laboratorio de Robótica]</span>
-                        <span class="fecha">2023-2024</span>
-                        <p>Desarrollo de prototipos robóticos para aplicaciones industriales. 
-                        Investigación en algoritmos de control adaptativo y sistemas de visión artificial 
-                        para navegación autónoma.</p>
-                    </div>
-                    <div class="item der">
-                        <h4>Técnico en Mantenimiento</h4>
-                        <span class="casa">[Planta Manufacturera]</span>
-                        <span class="fecha">2022-2023</span>
-                        <p>Mantenimiento preventivo y correctivo de equipos automatizados. 
-                        Diagnóstico de fallas en sistemas mecánicos, eléctricos y de control. 
-                        Implementación de mejoras en eficiencia operacional.</p>
+                        <h4>Técnico Junior en Soporte Computacional</h4>
+                        <span class="casa">Servicio Independiente</span>
+                        <span class="fecha">2020 - Presente
+                        </span>
+                        <p>Mantenimiento predictivo y correctivo de equipos de cómputo (PC y laptops). 
+                        Diagnóstico, reparación, limpieza interna, instalación de componentes y activación de software. 
+                        Asistencia personalizada en instalación de sistemas operativos y programas especializados</p>
+                        <div class="conectord"></div>
                     </div>
                 </div>
             </div>
@@ -298,45 +281,23 @@
             <h2>PORTAFOLIO</h2>
             <div class="galeria">
                 <div class="proyecto">
-                    <i class="fas fa-robot"></i>
                     <div class="overlay">
-                        <h3>Robot Manipulador</h3>
-                        <p>Sistema robótico de 6 DOF para automatización de procesos de ensamble con control por visión artificial</p>
+                        <i class="fas fa-robot"></i>
+                        <h3>Mini sumo de combate</h3>
+                        <p>Diseño y construcción de robots mini sumo para competencias internas y externas, obteniendo segundo lugar en ambas gracias a su desempeño en estrategia y mecánica</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <i class="fas fa-microchip"></i>
                     <div class="overlay">
-                        <h3>Sistema IoT Industrial</h3>
-                        <p>Red de sensores inteligentes para monitoreo en tiempo real de variables críticas en producción</p>
+                        <i class="fas fa-cogs"></i>
+                        <h3>Guante traductor multifuncional</h3>
+                        <p>Desarrollo de un guante inteligente capaz de interpretar el lenguaje de señas mexicano mediante sensores de flexión y traducirlo a voz en tiempo real</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <i class="fas fa-cogs"></i>
                     <div class="overlay">
-                        <h3>Control PLC Avanzado</h3>
-                        <p>Sistema de control automatizado para línea de producción con interfaz HMI y comunicación industrial</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <i class="fas fa-car"></i>
-                    <div class="overlay">
-                        <h3>Vehículo Autónomo</h3>
-                        <p>Prototipo de vehículo con navegación autónoma utilizando LIDAR, cámaras y algoritmos de IA</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <i class="fas fa-home"></i>
-                    <div class="overlay">
-                        <h3>Domótica Inteligente</h3>
-                        <p>Sistema integral de automatización residencial con control por smartphone y IA predictiva</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <i class="fas fa-brain"></i>
-                    <div class="overlay">
+                        <i class="fas fa-brain"></i>
                         <h3>Próximamente</h3>
-                        <p>Nuevo proyecto en desarrollo con machine learning aplicado a mantenimiento predictivo</p>
                     </div>
                 </div>
             </div>
@@ -344,7 +305,7 @@
     </section>
 
     <!-- Sección Contacto -->
-    <div id="contacto" class="contacto">
+    <section id="contacto" class="contacto">
         <div class="contenido-seccion">
             <h2>CONTACTO</h2>
             <div class="fila">
@@ -366,30 +327,30 @@
                         <ul>
                             <li>
                                 <i class="fa-solid fa-location-dot"></i>
-                                [Tu ciudad, estado, código postal]
+                                Huixtla, Chiapas, México 30640
                             </li>
                             <li>
                                 <i class="fa-solid fa-mobile"></i>
-                                Mi número telefónico: [Tu número]
+                                Mi número telefónico: +52 964 101 0089
                             </li>
                             <li>
                                 <i class="fa-regular fa-envelope"></i>
-                                Email: angel.olivares@email.com
+                                Email: ing.angelemanuel@gmail.com
                             </li>
                             <li>
                                 <i class="fa-brands fa-linkedin"></i>
-                                LinkedIn: /in/angel-olivares-mechatronics
+                                LinkedIn: Angel Emanuel Olivares Domínguez
                             </li>
                             <li>
                                 <i class="fa-brands fa-github"></i>
-                                GitHub: /angelolivares-mech
+                                GitHub: Ingeniero Ángel Emanuel
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -397,216 +358,13 @@
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-solid fa-envelope"></i></a>
-        </div>
+            <a href="https://www.linkedin.com/in/angel-emanuel-olivares-dom%C3%ADnguez-31313b366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Ingeniero-Angel-Emanuel"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/share/1CSAp6jHXV/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/angel._.emanuel_?igsh=dDhvbnFqNm81OTFp"><i class="fa-brands fa-instagram"></i></a>
+            </div>
     </footer>
 
-    <script>
-        // Smooth scrolling para navegación
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Animación de barras de progreso
-        function animateSkillBars() {
-            const skillBars = document.querySelectorAll('.progreso');
-            
-            skillBars.forEach(bar => {
-                const percentage = bar.querySelector('span').textContent;
-                bar.style.width = '0%';
-                bar.style.transition = 'width 2s ease-in-out';
-                
-                setTimeout(() => {
-                    bar.style.width = percentage;
-                }, 100);
-            });
-        }
-
-        // Intersection Observer para animaciones
-        const observerOptions = {
-            threshold: 0.3,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate');
-                    
-                    // Animar barras de skills cuando entren en vista
-                    if (entry.target.classList.contains('skills')) {
-                        setTimeout(animateSkillBars, 500);
-                    }
-                }
-            });
-        }, observerOptions);
-
-        // Observar secciones
-        document.querySelectorAll('section, .skills, .contacto').forEach(section => {
-            observer.observe(section);
-        });
-
-        // Efecto parallax ligero en el background
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const inicio = document.querySelector('.inicio');
-            if (inicio) {
-                inicio.style.transform = `translateY(${scrolled * 0.5}px)`;
-            }
-        });
-
-        // Efecto de typing en el título principal
-        function typeWriter(element, text, speed = 100) {
-            let i = 0;
-            element.innerHTML = '';
-            
-            function type() {
-                if (i < text.length) {
-                    element.innerHTML += text.charAt(i);
-                    i++;
-                    setTimeout(type, speed);
-                }
-            }
-            
-            type();
-        }
-
-        // Inicializar efecto de escritura cuando la página carga
-        window.addEventListener('load', () => {
-            const mainTitle = document.querySelector('.contenido-banner h1');
-            if (mainTitle) {
-                const originalText = mainTitle.textContent;
-                setTimeout(() => {
-                    typeWriter(mainTitle, originalText, 80);
-                }, 1000);
-            }
-        });
-
-        // Formulario de contacto
-        document.querySelector('button').addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            // Validación básica
-            const inputs = document.querySelectorAll('input, textarea');
-            let allFilled = true;
-            
-            inputs.forEach(input => {
-                if (!input.value.trim()) {
-                    allFilled = false;
-                    input.style.borderColor = 'var(--neon-red)';
-                } else {
-                    input.style.borderColor = 'var(--neon-blue)';
-                }
-            });
-            
-            if (allFilled) {
-                // Simular envío exitoso
-                this.innerHTML = 'Mensaje Enviado <i class="fa-solid fa-check"></i>';
-                this.style.background = 'var(--gradient-blue)';
-                this.style.borderColor = 'var(--neon-blue)';
-                
-                setTimeout(() => {
-                    this.innerHTML = 'Enviar Mensaje <i class="fa-regular fa-paper-plane"></i>';
-                    this.style.background = 'var(--gradient-red)';
-                    this.style.borderColor = 'var(--neon-red)';
-                    inputs.forEach(input => input.value = '');
-                }, 3000);
-            } else {
-                // Mostrar error
-                this.innerHTML = 'Complete todos los campos <i class="fa-solid fa-exclamation"></i>';
-                setTimeout(() => {
-                    this.innerHTML = 'Enviar Mensaje <i class="fa-regular fa-paper-plane"></i>';
-                }, 2000);
-            }
-        });
-
-        // Efecto hover mejorado en proyectos
-        document.querySelectorAll('.proyecto').forEach(proyecto => {
-            proyecto.addEventListener('mouseenter', function() {
-                this.style.transform = 'scale(1.05) rotateY(5deg)';
-                this.style.transition = 'all 0.3s ease';
-            });
-            
-            proyecto.addEventListener('mouseleave', function() {
-                this.style.transform = 'scale(1) rotateY(0deg)';
-            });
-        });
-
-        // Cambio de color del header al hacer scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('.contenedor-header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(0, 0, 0, 0.95)';
-                header.style.backdropFilter = 'blur(15px)';
-            } else {
-                header.style.background = 'rgba(0, 0, 0, 0.9)';
-                header.style.backdropFilter = 'blur(10px)';
-            }
-        });
-
-        // Contador animado para skills
-        function animateCounters() {
-            const counters = document.querySelectorAll('.progreso span');
-            
-            counters.forEach(counter => {
-                const target = parseInt(counter.textContent);
-                const duration = 2000;
-                const increment = target / (duration / 16);
-                let current = 0;
-                
-                const timer = setInterval(() => {
-                    current += increment;
-                    if (current >= target) {
-                        current = target;
-                        clearInterval(timer);
-                    }
-                    counter.textContent = Math.floor(current) + '%';
-                }, 16);
-            });
-        }
-
-        // Partículas flotantes decorativas
-        function createFloatingParticles() {
-            const particlesContainer = document.createElement('div');
-            particlesContainer.style.position = 'fixed';
-            particlesContainer.style.top = '0';
-            particlesContainer.style.left = '0';
-            particlesContainer.style.width = '100%';
-            particlesContainer.style.height = '100%';
-            particlesContainer.style.pointerEvents = 'none';
-            particlesContainer.style.zIndex = '1';
-            document.body.appendChild(particlesContainer);
-
-            for (let i = 0; i < 20; i++) {
-                const particle = document.createElement('div');
-                particle.style.position = 'absolute';
-                particle.style.width = '2px';
-                particle.style.height = '2px';
-                particle.style.background = i % 2 === 0 ? 'var(--neon-blue)' : 'var(--neon-red)';
-                particle.style.borderRadius = '50%';
-                particle.style.opacity = '0.3';
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.top = Math.random() * 100 + '%';
-                particle.style.animation = `float ${5 + Math.random() * 10}s infinite linear`;
-                particlesContainer.appendChild(particle);
-            }
-        }
-
-        // Inicializar partículas cuando carga la página
-        window.addEventListener('load', createFloatingParticles);
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
